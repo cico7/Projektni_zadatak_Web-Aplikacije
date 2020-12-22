@@ -1,0 +1,29 @@
+<!--prvo je potrebno promjeniti atrubut "action" unutar elementa "form" kako bi mogli obraditi podatke -->
+
+<form style="border: 4px solid black; width: 40%; float: left;"  action="test.php" id="contact_form"name="contact_form" method="POST">
+
+<!--pozivamo "test.php" koji smo prethodno spremili u B:/xampp/htdocs-->
+           
+
+
+	    <?php
+                if (isset($_POST ['firstname'])) { 
+                    print '<p>Vaše ime je: ' . $_POST ['firstname'] .'</p>';
+                    print '<p>Vaše prezime je: ' . $_POST ['lastname'] .'</p>';
+                    print '<p>Vaša email adresa je: <a href "">' . $_POST ['email'] .'<a/></p>';
+                    print '<p>Vaša država je: ' . $_POST ['country'] .'</p>';
+                    $poruka ='Ime i Prezime:'. $_POST ['firstname'] .' '. $_POST ['lastname'];
+                    $poruka .='Vaša email adresa je: <a href "mailto: ' . $_POST ['email'] . '">' . $_POST ['email'] . '<a/>';
+                    $poruka .='Vaša država je: ' . $_POST ['country'] .'</p>';
+                    mail($_POST ['email'],'Email forma',$poruka);
+                    print '<p>Vaš email je uspješno poslan!</p>';
+                }
+            ?>
+
+<!--Za potrebe dodatnog zadatka morali smo napraviti interni CSS kako bi imali uređen prikaz u pregledniku otvaranjem "test.php" -->
+
+<Style>
+	...
+	...
+	...
+</Style>

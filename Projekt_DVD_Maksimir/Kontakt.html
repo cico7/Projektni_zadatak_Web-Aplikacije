@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+		<title>DVD_Maksimir_Kontakt</title>
+		<!--meta_elements-->
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+		<meta name="description" content="Stranica ima svrhu prikazivanja rada Dobrovoljnog Vatrogasnog Drustva Maksimir">         
+		<meta name="keywords" content="vatrogasci, DVD, Maksimir, vatrogasno, dobrovoljno, društvo, vatrogasna">            
+		<meta name="author" content="Damir Eri">                             
+		<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"> 
+		
+		<!--favicon-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images/favicon_io/favicon-16x16.png">                                             
+		
+		<!--Style_css-->
+		<link rel="stylesheet" href="Style.css">
+		
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="DVD_Maksimir_Kontakt">
+		<meta itemprop="description" content="Stranica ima svrhu prikazivanja rada Dobrovoljnog Vatrogasnog Drustva Maksimir">
+		<meta itemprop="image" content="Your URL">
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="DVD_Maksimir_Kontakt">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="Your URL">
+		<meta property="og:image" content="Your URL">
+		<meta property="og:description" content="Stranica ima svrhu prikazivanja rada Dobrovoljnog Vatrogasnog Drustva Maksimir">
+		<meta property="article:tag" content="vatrogasci, DVD, Maksimir, vatrogasno, dobrovoljno, društvo, vatrogasna">
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:title" content="DVD_Maksimir_Kontakt">
+		<meta name="twitter:description" content="Stranica ima svrhu prikazivanja rada Dobrovoljnog Vatrogasnog Drustva Maksimir">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+		<!-- End Google Fonts -->
+	</head>
+<body>
+	<header>
+		<div class="page-image"></div>
+		<nav>
+			<ul>
+				<li><a href="Naslovna.html">Naslovna</a></li>
+				<li><a href="Novosti.html">Novosti</a></li>
+				<li><a href="O_nama.html">O nama</a></li>
+				<li><a href="Galerija.html">Galerija</a></li>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <div id="kontakt">
+			<h1>Lokacija:</h1>
+			<iframe style="border: 4px solid rgba(59, 240, 98, 0.651);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.732003685369!2d16.000656815569243!3d45.816625379106696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7ae014b3c11%3A0xa6ee23d6b46b5a56!2sDOBROVOLJNO%20VATROGASNO%20DRU%C5%A0TVO%20MAKSIMIR!5e0!3m2!1shr!2shr!4v1607881309122!5m2!1shr!2shr" style="float: left;" width="95%" height="400" frameborder="0"  allowfullscreen></iframe>
+			<h1>Kontaktirajte nas:</h1>
+			<form style=" width: 95%; float: left;"  action="test.html" id="contact_form"name="contact_form" method="POST">
+				<label for="fname">Ime *</label>
+				<input style="width: 40%;" type="text" id="fname" name="firstname" placeholder="Upišite ime..." required>
+
+				<label for="lname">Prezime *</label>
+				<input style="width: 40%;" type="text" id="lname" name="lastname" placeholder="Upišite prezime..." required>
+				
+				<label for="lname">Vaš E-mail *</label>
+				<input style="width: 40%;" type="email" id="email" name="email" placeholder="Upišite e-mail.." required>
+
+				<label for="zemlja">Zemlja</label>
+				<select style="width: 40%;" id="country" name="country">
+				  <option value="">Molimo vas odaberite</option>
+				  <option value="BIH">Bosna i Hercegovina</option>
+				  <option value="HR" selected>Hrvatska</option>
+				  <option value="SLO">Slovenija</option>
+                  <option value="HU">Mađarska</option>
+                  <option value="IT">Italija</option>
+                  <option value="GER">Njemačka</option>
+                  <option value="AU">Austrija</option>
+				</select>
+
+				<label for="subject">Vaša poruka</label>
+				<textarea style="width: 40%;" id="subject" name="subject" placeholder="Napišite poruku" style="height:200px"></textarea>
+
+				<input type="submit" value="Pošalji"><br><br>
+			</form>
+			<br><br>
+		</div>
+		<hr>
+		<p class="d_mreze">Društvene Mreže:<br>
+			<a href="https://www.youtube.com/" target="_blank"><img src="Images/youtube.PNG" alt="youtube" title="youtube" style="width:24px; margin-top:0.4em"></a>
+			<a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram_logo.jpg" alt="instagram" title="instagram" style="width:24px; margin-top:0.4em"></a>
+			<a href="https://www.facebook.com/dvdmaksimir.maksimir" target="_blank"><img src="Images/facebook_img.png" alt="facebook" title="facebook" style="width:24px; margin-top:0.4em"></a>
+		</p>
+	</main>
+	<footer>
+		<p class="footer_p">Copyright &copy; 2020. Damir Eri. <a href="https://github.com/cico7/Projektni_zadatak_Web-Aplikacije"><img style="width:20px;" src="Images/github.png" alt="Github" title="Github"></a></p>
+	</footer>	      
+</body>
+</html>
